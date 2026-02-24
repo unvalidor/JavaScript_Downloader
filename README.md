@@ -50,9 +50,8 @@ cat alljsfiles.txt | sort -u > jsfiles.txt
 Download all the JavaScript files you collected:
 
 ```bash
-git clone https://github.com/unvalidor/JavaScript_Downloader
-cd JavaScript_Downloader
-go run js_downloader.go jsfiles.txt
+go install github.com/unvalidor/JavaScript_Downloader@latest
+JavaScript_Downloader jsfiles.txt
 ```
 
 Make sure the path to `jsfiles.txt` is correct.
